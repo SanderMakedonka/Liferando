@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Liferando</title>
+    <link rel="stylesheet" href="style.css">
+    <!--<link rel="stylesheet" href="font.css">-->
+    <script src="script.js"></script>
+</head>
+
+<body id="body" class="noScrollBar" onload="renderMenu(), renderCart()">
+    <header id="header">
+        <h1>
+            <img class="logo" src="img/french-fries-64.png" >Steak<span class="orangeText">Lieferando</span>
+        </h1>
+        <div class="basketContainer"><img class="basket" id="basket" src="img/basket-white.png"
+                onclick="showBasket()">
+            <p class="itemsNum displayNone" id="items"></p>
+        </div>
+    </header>
+    <main>
+        <div class="sidebarBasket noScrollBar animateRight" id="sidebar">
+            <div class="sidebarTop">
+                <h2 class="cartTitle">Warenkorb</h2>
+                <div class="close" onclick="showBasket()">
+                    <h2>Schließen</h2>
+                </div>
+                <div class="sumContainer animateRight" id="sumContainer"></div>
+            </div>
+
+            <div class="cart" id="cart"></div>
+        </div>
+        <div class="restaurantData">
+            <div class="banner-container"><img class="banner"
+                    src="img/steak2.jpg">
+            </div>
+            <h2>Steak & Grill</h2>
+            <span class="stars">&#9733; &#9733; &#9733; &#9733; &#9734;</span> <span>292 Bewertungen</span>
+        </div>
+        <div class="outerMenuContainer"></div>
+        <div class="innerMenuContainer">
+            <h3>Bestellkarte</h3>
+            <div class="menu" id="menu"></div>
+        </div>
+    </main>
+</body>
